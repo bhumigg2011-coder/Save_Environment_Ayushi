@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Save the Environment</title>
+
+<style>
+/* ---------- GENERAL STYLE ---------- */
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#e8f5e9;
+    line-height:1.6;
+}
+
+header{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.slogan{
+    font-style:italic;
+    font-size:18px;
+}
+
+/* ---------- NAVIGATION ---------- */
+nav{
+    background:#1b5e20;
+    padding:10px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* ---------- SECTIONS ---------- */
+section{
+    padding:25px;
+}
+
+h2{
+    color:#1b5e20;
+}
+
+/* ---------- OFFLINE SAFE IMAGE ---------- */
+.placeholder-img{
+    width:300px;
+    height:200px;
+    margin:15px auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#a5d6a7;
+    border-radius:10px;
+    font-weight:bold;
+    color:#1b5e20;
+}
+
+/* ---------- TABLE ---------- */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th, td{
+    border:1px solid black;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#c8e6c9;
+}
+
+/* ---------- FORM ---------- */
+form{
+    max-width:400px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:8px;
+    margin:8px 0;
+}
+
+button{
+    padding:10px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1b5e20;
+}
+
+/* ---------- ANIMATIONS ---------- */
+.fade-in{
+    animation:fade 2s;
+}
+
+@keyframes fade{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+.slide-in{
+    animation:slide 1.5s;
+}
+
+@keyframes slide{
+    from{margin-left:-100px; opacity:0;}
+    to{margin-left:0; opacity:1;}
+}
+
+/* ---------- POPUP ---------- */
+#popup{
+    display:none;
+    position:fixed;
+    top:30%;
+    left:30%;
+    background:#c8e6c9;
+    padding:20px;
+    border:2px solid #2e7d32;
+    border-radius:10px;
+    z-index:1000;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Save the Environment</h1>
+    <p class="slogan">Protect Nature Today, Secure Our Tomorrow</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#causes">Causes</a>
+    <a href="#effects">Effects</a>
+    <a href="#solutions">Solutions</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="fade-in">
+    <div class="placeholder-img">SAVE THE ENVIRONMENT</div>
+
+    <h2>Environmental Pollution</h2>
+    <p>
+        Environmental pollution is the contamination of air, water, and soil by harmful substances.
+        Human activities such as industrialization, deforestation, and excessive use of fossil fuels
+        are the main causes of environmental pollution.
+    </p>
+
+    <h2>Importance of Protecting the Environment</h2>
+    <ul>
+        <li>Maintains ecological balance</li>
+        <li>Protects human health</li>
+        <li>Preserves biodiversity</li>
+        <li>Ensures a safe future for coming generations</li>
+    </ul>
+
+    <button onclick="showPopup()">Did You Know?</button>
+</section>
+
+<!-- CAUSES -->
+<section id="causes" class="slide-in">
+    <h2>Causes of Environmental Pollution</h2>
+
+    <div class="placeholder-img">CAUSES OF POLLUTION</div>
+
+    <ul>
+        <li>Industrial smoke and chemical waste</li>
+        <li>Vehicular emissions</li>
+        <li>Plastic waste and improper disposal</li>
+        <li>Deforestation and urbanization</li>
+        <li>Overuse of fertilizers and pesticides</li>
+    </ul>
+</section>
+
+<!-- EFFECTS -->
+<section id="effects" class="fade-in">
+    <h2>Effects of Pollution on Earth</h2>
+
+    <ol>
+        <li>Global warming and climate change</li>
+        <li>Increase in respiratory and water-borne diseases</li>
+        <li>Loss of wildlife and biodiversity</li>
+        <li>Soil infertility and food scarcity</li>
+    </ol>
+
+    <h3>Types of Pollution</h3>
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Causes</th>
+            <th>Harmful Effects</th>
+        </tr>
+        <tr>
+            <td>Air</td>
+            <td>Vehicle and factory smoke</td>
+            <td>Asthma and lung diseases</td>
+        </tr>
+        <tr>
+            <td>Water</td>
+            <td>Sewage and industrial waste</td>
+            <td>Water contamination and diseases</td>
+        </tr>
+        <tr>
+            <td>Soil</td>
+            <td>Chemicals and plastic waste</td>
+            <td>Reduced soil fertility</td>
+        </tr>
+        <tr>
+            <td>Noise</td>
+            <td>Traffic and loud machines</td>
+            <td>Stress and hearing problems</td>
+        </tr>
+    </table>
+</section>
+
+<!-- SOLUTIONS -->
+<section id="solutions" class="slide-in">
+    <h2>Solutions – The 3R Principle</h2>
+
+    <dl>
+        <dt><b>Reduce</b></dt>
+        <dd>Reduce waste by minimizing unnecessary consumption.</dd>
+
+        <dt><b>Reuse</b></dt>
+        <dd>Reuse items like bags, bottles, and containers.</dd>
+
+        <dt><b>Recycle</b></dt>
+        <dd>Recycle waste materials into useful products.</dd>
+    </dl>
+
+    <ul>
+        <li>Plant more trees</li>
+        <li>Save electricity and water</li>
+        <li>Use renewable energy sources</li>
+        <li>Promote eco-friendly habits</li>
+    </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="fade-in">
+    <h2>Contact Us</h2>
+
+    <form>
+        <label>Name:</label>
+        <input type="text" required>
+
+        <label>Email:</label>
+        <input type="email" required>
+
+        <label>Message:</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- POPUP -->
+<div id="popup">
+    🌱 One tree can absorb up to 22 kg of carbon dioxide every year.  
+    <br><br>
+    <button onclick="closePopup()">Close</button>
+</div>
+
+<script>
+function showPopup(){
+    document.getElementById("popup").style.display="block";
+}
+function closePopup(){
+    document.getElementById("popup").style.display="none";
+}
+</script>
+
+</body>
+</html>
